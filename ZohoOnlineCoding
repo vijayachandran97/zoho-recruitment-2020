@@ -1,1 +1,47 @@
 
+/*package whatever //do not write package name here */
+
+import java.io.*;
+
+class GFG {
+public static void
+    printMiddleCharacter(String str)
+    {
+        
+        	int i, j, row = str.length();       
+for (i=0; i<row; i++)   
+{  
+    
+for (j=2*(row-i); j>=0; j--)         
+{  
+     
+System.out.print(" ");   
+}   
+
+for (j=0; j<=i; j++ )   
+{   
+    
+     int len = str.length();
+
+        int middle = len / 2;
+      
+        System.out.println(str.charAt(middle));
+}   
+System.out.println();   
+}   
+       
+ 
+       
+    }
+
+ public static void
+    main(String args[])
+    {
+      
+        String str = "Welcome";
+ 
+  
+        printMiddleCharacter(str);
+    }
+	
+}
